@@ -6,7 +6,7 @@ source as (
 
 ),
 
-renamed as (
+address as (
 
     select
         stateprovinceid
@@ -27,4 +27,4 @@ renamed as (
 
 )
 
-select * from renamed
+select * from address
