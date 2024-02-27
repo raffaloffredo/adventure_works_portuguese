@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__address
+    description: Street address information for customers, employees, and vendors.
+    columns:
+      - name:
+        addressid
+        addressline1
+        addressline2
+        city       
+        stateprovinceid
+        postalcode
+        spatiallocation
+        rowguid
+        modifieddate

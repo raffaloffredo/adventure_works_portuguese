@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: sap_adw
+    database: adventure-works-413718
+    description: Adventure Works SAP source
+    schema: adventure_works
+
+    tables:
+        - name: address
+        - name: countryregion
+        - name: employee
+        - name: person
+        - name: product
+        - name: productcategory
+        - name: productsubcategory
+        - name: salesorderdetail
+        - name: salesorderheader
+          freshness: 
+            warn_after: {count: 24, period: hour}
+            error_after: {count: 48, period: hour}
+          loaded_at_field: orderdate          
+        - name: salesperson
+        - name: salesreason
+        - name: salesterritory
+        - name: shipmethod
+        - name: stateprovince
+        - name: store
