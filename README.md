@@ -7,7 +7,7 @@
 <br/>
 
 <p align="center">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUXiAnHcSroxKrmEHFU5gu1geGACanmXl_87L1aMR5QJPqtzk4Ziol5maoVANaxOWVXFcjkUlBq4Td7qS0z68GVaYPhbfK2g8PnAz_REFTo5YOO0w3LkExBoyewGBkTTEfcPD9cVJ7eOu_RzNw_bdzfDeve7WKSaRP4ZDvG8AWdKXVlfo5NXhZbhJOu4U/w640-h628/AW-Logo.png" width="30%">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMgYM5qSqQL1xhGqGhPwkjbwub1thEUb9AAFDzBbnTUPNgSUB7RaVDCSM6UJc1uEk41S3T3KYaM24rPe91o5bSnqAgEoMZwIJObDSUvmnq_Vv68mfcODphfMEYVxeH6YFq-xGVEVNqgXU2MzbCS5H77kFnvJTg4tLu7cuaiS_H_zro_7mwQI0gQtwoUqI/w640-h259/aw_logo.png" width="60%">
 </p>
 <br/>
 
