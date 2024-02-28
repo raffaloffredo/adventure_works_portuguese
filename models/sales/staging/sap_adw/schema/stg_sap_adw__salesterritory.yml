@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__salesterritory
+    description: Sales territory lookup table.
+    columns:
+      - name: territoryid
+        description: Primary key for SalesTerritory records.
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: Sales territory description
+      - name: countryregioncode
+        description: ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+      - name: group
+        description: Geographic area to which the sales territory belong.
+      - name: salesytd
+        description: Sales in the territory year to date.
+      - name: saleslastyear
+        description: Sales in the territory the previous year.
+      - name: costytd
+        description: Business costs in the territory year to date.
+      - name: costlastyear
+        description: Business costs in the territory the previous year.
+      - name: rowguid
+      - name: modifieddate
+      

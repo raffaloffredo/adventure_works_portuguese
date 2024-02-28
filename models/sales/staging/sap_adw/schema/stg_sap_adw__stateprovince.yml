@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__stateprovince
+    description: State and province lookup table.
+    columns:
+      - name: stateprovinceid
+        description: Primary key for StateProvince records.
+        tests:
+          - unique
+          - not_null
+      - name: stateprovincecode
+        description: ISO standard state or province code.
+      - name: countryregioncode
+        description: ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+      - name: isonlystateprovinceflag
+        description: 0 = StateProvinceCode exists. 1 = StateProvinceCode unavailable, using CountryRegionCode.
+      - name: name
+        description: State or province description.
+      - name: territoryid
+        description: ID of the territory in which the state or province is located. Foreign key to SalesTerritory.SalesTerritoryID.
+      - name: rowguid
+      - name: modifieddate
+      

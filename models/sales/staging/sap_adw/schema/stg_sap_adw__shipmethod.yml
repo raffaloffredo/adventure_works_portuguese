@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__shipmethod
+    description: Shipping company lookup table.
+    columns:
+      - name: shipmethodid
+        description: Primary key for ShipMethod records.
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: Shipping company name.
+      - name: shipbase
+        description: Minimum shipping charge.
+      - name: shiprate
+        description: Shipping charge per pound.
+      - name: rowguid
+      - name: modifieddate
+      
