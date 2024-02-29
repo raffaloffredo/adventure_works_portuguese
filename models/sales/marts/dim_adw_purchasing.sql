@@ -1,6 +1,6 @@
 with dim_adw_purchasing as (
     select 
-        {{ dbt_utils.generate_surrogate_key(['name']) }} as purchasing_sk
+        {{ dbt_utils.generate_surrogate_key(['shipcompanyname']) }} as purchasing_sk
         , shipmethodid
 	    , shipcompanyname
 	    , shipbase

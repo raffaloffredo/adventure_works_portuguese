@@ -1,6 +1,6 @@
  with dim_adw_product as (
     select
-        {{ dbt_utils.generate_surrogate_key(['productcategoryid', 'productnumber']) }} as dimproduct_sk
+        {{ dbt_utils.generate_surrogate_key(['product.productid', 'product.productnumber']) }} as dimproduct_sk
         , product.productid
         , product.productsubcategoryid
         , product.name
