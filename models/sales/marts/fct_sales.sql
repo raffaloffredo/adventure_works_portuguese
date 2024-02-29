@@ -2,6 +2,7 @@ with fct_sales as (
     select  
         salesorderheader.salesorderid
         , salesorderheader.revisionnumber
+        , salesorderheader.salespersonid
         , salesorderheader.orderdate
         , salesorderheader.duedate
         , salesorderheader.shipdate
