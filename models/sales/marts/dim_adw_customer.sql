@@ -10,9 +10,11 @@ with dim_adw_customer as (
         , address.addressid
         , address.city
         , stateprovince.stateprovinceid
+        , stateprovince.stateprovincecode
         , stateprovince.name as stateprovincename
         , stateprovince.countryregioncode
         , countryregion.name as countryregionname
+        , stateprovince.territoryid
         , salesterritory.territorygroup
 
     from {{ ref('stg_sap_adw__salesorderheader') }} as salesorderheader
