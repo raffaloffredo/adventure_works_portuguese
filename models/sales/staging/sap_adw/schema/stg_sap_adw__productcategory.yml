@@ -9,8 +9,11 @@ models:
         tests:
           - unique
           - not_null
+
       - name: name
         description: Category description.
+
       - name: rowguid
+      
       - name: modifieddate
       

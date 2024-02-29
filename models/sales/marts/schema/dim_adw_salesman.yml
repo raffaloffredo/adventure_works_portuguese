@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: dim_adw_salesman
+    description: This is the salesman dimension table.
+    columns: 
+      - name: salesman_sk
+        description: The surrogate key of this table. Primary key for salesman records
+        tests:
+          - unique
+          - not_null
+
+      - name: businessentityid
+        description: Foreign key for SalesPerson records. Foreign key to Employee.BusinessEntityID
+
+      - name: territoryid
+        description: Territory currently assigned to. Foreign key to SalesTerritory.SalesTerritoryID.
+
+      - name: storename
+        description: Name of the store.
+
+      - name: jobtitle
+        description: Work title such as Buyer or Sales Representative.
+
+      - name: firstname
+        description: First name of the person.
+
+      - name: middlename
+        description: Middle name or middle initial of the person.
+
+      - name: lastname
+        description: Last name of the person.
+
+      - name: salesquota
+        description: Projected yearly sales.
+
+      - name: bonus
+        description: Bonus due if quota is met.
+
+      - name: commissionpct
+        description: Commision percent received per sale.
+
+      - name: salesytd
+        description: Sales total year to date.
+
+      - name: saleslastyear
+        description: Sales total of previous year.

@@ -4,7 +4,8 @@ with source as (
 
 salesorderdetail as (
     select
-        cast(orderqty as integer) as orderqty
+        {{ dbt_utils.generate_surrogate_key(['salesorderdetailid']) }} as salesorderdetail_sk
+        , cast(orderqty as integer) as orderqty
         , cast(salesorderid as integer) as salesorderid
         , cast(salesorderdetailid as integer) as salesorderdetailid
         , cast(unitprice as numeric) as unitprice

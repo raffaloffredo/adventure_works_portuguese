@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: dim_adw_customer
+    description: This is the customers dimension table.

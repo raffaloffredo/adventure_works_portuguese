@@ -4,7 +4,8 @@ with source as (
 
 stateprovince as (
     select
-        cast(stateprovinceid as integer) as stateprovinceid
+        {{ dbt_utils.generate_surrogate_key(['stateprovinceid']) }} as stateprovince_sk
+        , cast(stateprovinceid as integer) as stateprovinceid
         , cast(countryregioncode as string) as countryregioncode
         , cast(modifieddate as timestamp) as modifieddate
         , cast(rowguid as string) as rowguid

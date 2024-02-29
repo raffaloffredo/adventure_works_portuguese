@@ -4,7 +4,8 @@ with source as (
 
 address as (
     select
-        cast(stateprovinceid as integer) as stateprovinceid
+        {{ dbt_utils.generate_surrogate_key(['addressid']) }} as address_sk
+        , cast(stateprovinceid as integer) as stateprovinceid
         , cast(city as string) as city
         , cast(addressline2 as string) as addressline2
         , cast(modifieddate as timestamp) as modifieddate

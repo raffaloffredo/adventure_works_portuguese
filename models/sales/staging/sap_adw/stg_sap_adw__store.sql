@@ -4,10 +4,11 @@ with source as (
 
 store as (
     select
-        cast(salespersonid as integer) as salespersonid
+        {{ dbt_utils.generate_surrogate_key(['businessentityid', 'name']) }} as store_sk
+        , cast(salespersonid as integer) as salespersonid
         , cast(modifieddate as timestamp) as modifieddate
         , cast(rowguid as string) as rowguid
-        , cast(name as string) as name
+        , cast(name as string) as storename
         , cast(_sdc_table_version as integer) as _sdc_table_version
         , cast(_sdc_received_at as timestamp) as _sdc_received_at
         , cast(_sdc_sequence as integer) as _sdc_sequence

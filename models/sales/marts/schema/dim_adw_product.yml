@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: dim_adw_product
+    description: This is the product dimension table.
+
+  - name: dimproduct_sk
+    description: The surrogate key of this table. Primary key for product  records
+    tests:
+      - unique
+      - not_null
+  
+  - name: productid
+    description: Foreign key for Product records.
+  
+  - name: productsubcategoryid
+    description: Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID.
+  
+  - name: name
+    description: Name of the product.
+  
+  - name: standardcost
+    description: Standard cost of the product.
+  
+  - name: listprice
+    description: Selling price.
+  
+  - name: productline
+    description: R = Road, M = Mountain, T = Touring, S = Standard
+
+  - name: style
+    description:  W = Womens, M = Mens, U = Universal
+  
+  - name: categoryname
+    description: Category description.
+
+  - name: subcategoryname
+    description: Subcategory description.
+    

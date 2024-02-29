@@ -9,10 +9,14 @@ models:
         tests:
           - unique
           - not_null
+
       - name: productcategoryid
         description: Product category identification number. Foreign key to ProductCategory.ProductCategoryID.
+
       - name: name
         description: Subcategory description.
+
       - name: rowguid
+      
       - name: modifieddate
       

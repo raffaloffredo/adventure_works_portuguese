@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_adw_purchasing
+    description: This is the purchasing dimension table.
+    columns: 
+      - name: purchasing_sk
+        description: The surrogate key of this table. Primary key for purchasing records.
+        tests:
+          - unique
+          - not_null
+
+      - name: shipmethodid
+        description: Foreign key for ShipMethod records.
+
+      - name: shipcompanyname
+        description: Shipping company name.
+
+      - name: shipbase
+        description: Minimum shipping charge.
+
+      - name: shiprate
+        description: Shipping charge per pound.

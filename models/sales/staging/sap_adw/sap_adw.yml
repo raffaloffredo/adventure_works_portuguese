@@ -18,6 +18,7 @@ sources:
         - name: salesorderheader      
         - name: salesperson
         - name: salesreason
+        - name: salesorderheadersalesreason
         - name: salesterritory
         - name: shipmethod
         - name: stateprovince

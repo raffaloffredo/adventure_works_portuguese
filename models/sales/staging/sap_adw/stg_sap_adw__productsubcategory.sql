@@ -4,7 +4,8 @@ with source as (
 
 productsubcategory as (
     select
-        cast(modifieddate as timestamp) as modifieddate
+        {{ dbt_utils.generate_surrogate_key(['productsubcategoryid']) }} as productsubcategory_sk
+        , cast(modifieddate as timestamp) as modifieddate
         , cast(rowguid as string) as rowguid
         , cast(productcategoryid as integer) as productcategoryid
         , cast(name as string) as name

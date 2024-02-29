@@ -4,7 +4,8 @@ with source as (
 
 person as (
     select
-        cast(lastname as string) as lastname
+        {{ dbt_utils.generate_surrogate_key(['businessentityid', 'firstname', 'lastname']) }} as person_sk
+        , cast(lastname as string) as lastname
         , cast(persontype as string) as persontype
         , cast(namestyle as boolean) as namestyle
         , cast(suffix as string) as suffix

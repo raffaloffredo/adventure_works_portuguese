@@ -4,12 +4,13 @@ with source as (
 
 salesterritory as (
     select
-        cast("group" as string) as territorygroup
+        {{ dbt_utils.generate_surrogate_key(['territoryid']) }} as salesterritory_sk
+        , cast("group" as string) as territorygroup
         , cast(countryregioncode as string) as countryregioncode
         , cast(modifieddate as timestamp) as modifieddate
         , cast(rowguid as string) as rowguid
         , cast(saleslastyear as numeric) as saleslastyear
-        , cast(name as string) as name
+        , cast(name as string) as salesterritoryname
         , cast(_sdc_table_version as integer) as _sdc_table_version
         , cast(territoryid as integer) as territoryid
         , cast(costytd as numeric) as costytd

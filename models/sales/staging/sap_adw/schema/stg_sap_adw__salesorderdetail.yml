@@ -6,23 +6,32 @@ models:
     columns:
       - name: salesorderid
         description: Primary key. Foreign key to SalesOrderHeader.SalesOrderID.
+
       - name: salesorderdetailid
         description: Primary key. One incremental unique number per product sold.
         tests:
           - unique
           - not_null
+
       - name: carriertrackingnumber
         description: Shipment tracking number supplied by the shipper.
+
       - name: orderqty
         description: Quantity ordered per product.
+
       - name: productid
         description: Product sold to customer. Foreign key to Product.ProductID.
+
       - name: specialofferid
         description: Promotional code. Foreign key to SpecialOffer.SpecialOfferID.
+
       - name: unitprice
         description: Selling price of a single product.
+
       - name: unitpricediscount
         description: Discount amount.
+
       - name: rowguid
+      
       - name: modifieddate
       

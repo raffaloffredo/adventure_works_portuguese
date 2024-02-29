@@ -9,12 +9,17 @@ models:
         tests:
           - unique
           - not_null
-      - name: name
+
+      - name: shipcompanyname
         description: Shipping company name.
+
       - name: shipbase
         description: Minimum shipping charge.
+
       - name: shiprate
         description: Shipping charge per pound.
+
       - name: rowguid
+      
       - name: modifieddate
       

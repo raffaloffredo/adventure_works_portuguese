@@ -9,12 +9,17 @@ models:
         tests:
           - unique
           - not_null
-      - name: name
+
+      - name: storename
         description: Name of the store.
+
       - name: salespersonid
         description: ID of the sales person assigned to the customer. Foreign key to SalesPerson.BusinessEntityID.
+
       - name: demographics
         description: Demographic informationg about the store such as the number of employees, annual sales and store type.
+
       - name: rowguid
+      
       - name: modifieddate
       

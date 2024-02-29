@@ -4,7 +4,8 @@ with source as (
 
 countryregion as (
     select
-        cast(countryregioncode as string) as countryregioncode
+        {{ dbt_utils.generate_surrogate_key(['countryregioncode']) }} as countryregioncode_sk
+        , cast(countryregioncode as string) as countryregioncode
         , cast(modifieddate as timestamp) as modifieddate
         , cast(name as string) as name
         , cast(_sdc_sequence as integer) as _sdc_sequence

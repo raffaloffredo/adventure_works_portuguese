@@ -4,7 +4,8 @@ with source as (
 
 salesorderheader as (
     select
-        cast(purchaseordernumber as string) as purchaseordernumber
+        {{ dbt_utils.generate_surrogate_key(['salesorderid']) }} as salesorder_sk
+        , cast(purchaseordernumber as string) as purchaseordernumber
         , cast(shipmethodid as integer) as shipmethodid
         , cast(salesorderid as integer) as salesorderid
         , cast(billtoaddressid as integer) as billtoaddressid

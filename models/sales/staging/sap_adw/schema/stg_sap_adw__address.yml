@@ -9,17 +9,25 @@ models:
         tests:
           - unique
           - not_null
+
       - name: addressline1
         description: First street address line.
+
       - name: addressline2
         description: Second street address line.
+
       - name: city
         description: Name of the city.
+
       - name: stateprovinceid
         description: Unique identification number for the state or province. Foreign key to StateProvince table.
+
       - name: postalcode
         description: Postal code for the street address.
+
       - name: spatiallocation
         description: Latitude and longitude of this address.
+
       - name: rowguid
+      
       - name: modifieddate

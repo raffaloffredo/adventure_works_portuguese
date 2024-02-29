@@ -9,18 +9,26 @@ models:
         tests:
           - unique
           - not_null
+      
       - name: territoryid
         description: Territory currently assigned to. Foreign key to SalesTerritory.SalesTerritoryID.
+
       - name: salesquota
         description: Projected yearly sales.
+
       - name: bonus
         description: Bonus due if quota is met.
+
       - name: commissionpct
         description: Commision percent received per sale.
+
       - name: salesytd
         description: Sales total year to date.
+
       - name: saleslastyear
         description: Sales total of previous year.
+
       - name: rowguid
+      
       - name: modifieddate
       

@@ -4,7 +4,8 @@ with source as (
 
 employee as (
     select
-        cast(nationalidnumber as string) as nationalidnumber
+        {{ dbt_utils.generate_surrogate_key(['businessentityid', 'loginid']) }} as employee_sk
+        , cast(nationalidnumber as string) as nationalidnumber
         , cast(sickleavehours as integer) as sickleavehours
         , cast(loginid as string) as loginid
         , cast(currentflag as boolean) as currentflag

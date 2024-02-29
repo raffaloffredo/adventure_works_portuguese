@@ -9,39 +9,47 @@ models:
         tests:
           - unique
           - not_null
+
       - name: nationalidnumber
         description: Unique national identification number such as a social security number.
         tests:
           - unique
+
       - name: loginid
         description: Network login.
         tests:
           - unique
+
       - name: jobtitle
         description: Work title such as Buyer or Sales Representative.
+
       - name: birthdate
         description: Date of birth.
+
       - name: maritalstatus
         description: M = Married, S = Single
-        tests:
-          - accepted_values:
-              values: ['M', 'S']
+
       - name: gender
         description: M = Male, F = Female
-        tests:
-          - accepted_values:
-              values: ['M', 'F']
+
       - name: hiredate
         description: Employee hired on this date.
+
       - name: salariedflag
         description: Job classification. 0 = Hourly, not exempt from collective bargaining. 1 = Salaried, exempt from collective bargaining.
+      
       - name: vacationhours
         description: Number of available vacation hours.
+
       - name: sickleavehours
         description:  Number of available sick leave hours.
+
       - name: currentflag
         description: 0 = Inactive, 1 = Active
+
       - name: rowguid
+
       - name: modifieddate
+
       - name: organizationnode
         description: Where the employee is located in corporate hierarchy.

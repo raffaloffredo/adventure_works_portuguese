@@ -4,7 +4,8 @@ with source as (
 
 product as (
     select
-        cast(sellenddate as timestamp) as sellenddate
+        {{ dbt_utils.generate_surrogate_key(['productid']) }} as product_sk
+        , cast(sellenddate as timestamp) as sellenddate
         , cast(safetystocklevel as integer) as safetystocklevel
         , cast(finishedgoodsflag as boolean) as finishedgoodsflag
         , cast(class as string) as class

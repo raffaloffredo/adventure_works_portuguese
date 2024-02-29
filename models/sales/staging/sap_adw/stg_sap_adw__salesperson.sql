@@ -4,7 +4,8 @@ with source as (
 
 salesperson as (
     select
-        cast(salesquota as numeric) as salesquota
+        {{ dbt_utils.generate_surrogate_key(['businessentityid', 'saleslastyear', 'territoryid', 'commissionpct']) }} as salesperson_sk
+        , cast(salesquota as numeric) as salesquota
         , cast(modifieddate as timestamp) as modifieddate
         , cast(rowguid as string) as rowguid
         , cast(saleslastyear as numeric) as saleslastyear
