@@ -1,4 +1,4 @@
-with dim_adw_customer as (
+with dim_adw_salesman as (
     select
         {{ dbt_utils.generate_surrogate_key(['salesperson_sk', 'employee_sk', 'person_sk', 'store_sk']) }} as salesman_sk
         , salesperson.businessentityid
@@ -26,4 +26,4 @@ with dim_adw_customer as (
     on employee.businessentityid = person.businessentityid
 )
 
-select * from dim_adw_customer
+select * from dim_adw_salesman
