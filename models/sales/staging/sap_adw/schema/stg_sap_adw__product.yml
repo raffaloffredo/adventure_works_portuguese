@@ -1,0 +1,82 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__product
+    description: Products sold or used in the manfacturing of sold products.
+    columns:
+      - name: productid
+        description: Primary key for Product records.
+        tests:
+          - unique
+          - not_null
+
+      - name: name
+        description: Name of the product.
+
+      - name: productnumber
+        description: Unique product identification number.
+
+      - name: makeflag
+        description: 0 = Product is purchased, 1 = Product is manufactured in-house.
+
+      - name: finishedgoodsflag
+        description: 0 = Product is not a salable item. 1 = Product is salable.
+
+      - name: color
+        description: Product color.
+
+      - name: safetystocklevel
+        description: Minimum inventory quantity.
+
+      - name: reorderpoint
+        description: Inventory level that triggers a purchase order or work order.
+
+      - name: standardcost
+        description: Standard cost of the product.
+
+      - name: listprice
+        description: Selling price.
+
+      - name: size
+        description: Product size.
+
+      - name: sizeunitmeasurecode
+        description: Unit of measure for Size column.
+
+      - name: weightunitmeasurecode
+        description: Unit of measure for Weight column.
+
+      - name: weight
+        description: Product weight.
+
+      - name: daystomanufacture
+        description: Number of days required to manufacture the product.
+
+      - name: productline
+        description: R = Road, M = Mountain, T = Touring, S = Standard
+
+      - name: class
+        description: H = High, M = Medium, L = Low
+
+      - name: style
+        description: W = Womens, M = Mens, U = Universal
+
+      - name: productsubcategoryid
+        description: Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID.
+      
+      - name: productmodelid
+        description: Product is a member of this product model. Foreign key to ProductModel.ProductModelID.
+
+      - name: sellstartdate
+        description: Date the product was available for sale.
+
+      - name: sellenddate
+        description: Date the product was no longer available for sale.
+
+      - name: discontinueddate
+        description: Date the product was discontinued.
+
+      - name: rowguid
+      
+      - name: modifieddate
+      

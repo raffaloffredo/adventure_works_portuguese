@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: agg_salessalesmanregion
+    description: This is an aggregate table with sales per salesman per region.
+
+  - name: orderid
+    description: Unique number identification for each order.
+  
+  - name: employeefirstname
+    description: First name of the person.
+  
+  - name: employeelastname
+    description: Last name of the person.
+  
+  - name: city
+    description: Name of the city.
+  
+  - name: stateprovincecode
+    description: ISO standard state or province code.
+  
+  - name: stateprovincename
+    description: State or province description.
+  
+  - name: countryregioncode
+    description: ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+  
+  - name: countryregionname
+    description: Country or region name.
+  
+  - name: subtotal
+    description: Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID.
+  
+  - name: totaldue
+    description: Total due from customer. Computed as Subtotal + TaxAmt + Freight.

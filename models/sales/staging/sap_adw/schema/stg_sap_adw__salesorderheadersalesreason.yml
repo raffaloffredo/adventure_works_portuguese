@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__salesorderheadersalesreason
+    description: Cross-reference table mapping sales orders to sales reason codes.
+    columns:
+      - name: salesorderid
+        description: Primary key. Foreign key to SalesOrderHeader.SalesOrderID.
+          - not_null
+
+      - name: salesreasonid
+        description: Primary key. Foreign key to SalesReason.SalesReasonID.
+
+      - name: modifieddate

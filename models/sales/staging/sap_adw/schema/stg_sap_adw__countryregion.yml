@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__countryregion
+    description: Lookup table containing the ISO standard codes for countries and regions.
+    columns:
+      - name: countryregioncode
+        description: ISO standard code for countries and regions.
+        tests:
+          - unique
+          - not_null
+
+      - name: name
+        description: Country or region name.
+        
+      - name: modifieddate

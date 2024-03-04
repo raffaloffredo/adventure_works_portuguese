@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: dim_adw_customer
+    description: This is the customers dimension table.
+
+  - name: customer_sk
+    description: The surrogate key of this table. Primary key for customer records
+    tests:
+      - unique
+      - not_null
+  
+  - name: orderid
+    description: Foreign key.
+    
+  - name: customerid
+    description: Customer identification number. Foreign key to Customer.BusinessEntityID.
+
+  - name: salespersonid
+    description: Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID.
+
+  - name: customerfirstname
+    description: First name of the person.
+  
+  - name: customermiddlename
+    description: Middle name or middle initial of the person.
+    
+  - name: customerlastname
+    description: Last name of the person.
+  
+  - name: addressid
+    description: Foreign key for Address records.
+  
+  - name: city
+    description: Name of the city.
+  
+  - name: stateprovinceid
+    description: Unique identification number for the state or province. Foreign key to StateProvince table.
+  
+  - name: stateprovincecode
+    description: ISO standard state or province code.
+  
+  - name: stateprovincename
+    description: State or province description.
+
+  - name: countryregioncode
+    description: ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+
+  - name: countryregionname
+    description: Country or region name.
+  
+  - name: territoryid
+    description: ID of the territory in which the state or province is located. Foreign key to SalesTerritory.SalesTerritoryID.
+
+  - name: territorygroup
+    description: Geographic area to which the sales territory belong.

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_sap_adw__productsubcategory
+    description: Product subcategories. See ProductCategory table.
+    columns:
+      - name: productsubcategoryid
+        description: Primary key for ProductSubcategory records.
+        tests:
+          - unique
+          - not_null
+
+      - name: productcategoryid
+        description: Product category identification number. Foreign key to ProductCategory.ProductCategoryID.
+
+      - name: name
+        description: Subcategory description.
+
+      - name: rowguid
+      
+      - name: modifieddate
+      

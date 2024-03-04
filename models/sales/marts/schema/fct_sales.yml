@@ -1,0 +1,146 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: This is a fact table for sales mart.
+
+  - name: sales_sk
+    description: The surrogate key of this table. Primary key for sales records.
+    tests:
+      - unique
+      - not_null
+  
+  - name: order_fk
+    description: Foreign key to dim_adw_order.order_sk.
+
+  - name: product_fk
+    description: Foreign key to dim_adw_product.dimproduct_sk.
+  
+  - name: customer _fk
+    description: Foreign key to dim_adw_customer.customer_sk.
+  
+  - name: salesman_fk
+    description: Foreign key to dim_adw_salesman.salesman_sk.
+
+  - name: revisionnumber
+    description: Incremental number to track changes to the sales order over time.
+
+  - name: orderid
+    description: Unique number identification for each order.
+
+  - name: orderdate
+    description: Dates the sales order was created.
+
+  - name: unitprice
+    description: Selling price of a single product.
+
+  - name: unitpricediscount
+    description: Discount amount.
+
+  - name: shipdate
+    description: Date the order was shipped to the customer.
+
+  - name: shipcompanyname
+    description: Shipping company name.
+
+  - name: shipstatus
+    description: Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled
+
+  - name: onlineorderflag
+    description: 0 = Order placed by sales person. 1 = Order placed online by customer.
+
+  - name: subtotal
+    description: Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID.
+
+  - name: taxamt
+    description: Tax amount.
+
+  - name: freight
+    description: Shipping cost.
+
+  - name: totaldue
+    description: Total due from customer. Computed as Subtotal + TaxAmt + Freight.
+
+  - name: reasontype
+    description: Category the sales reason belongs to.
+
+  - name: salesreasonname
+    description: Sales reason description.
+
+  - name: productname
+    description: Name of the product.
+  
+  - name: orderqty
+    description: Quantity ordered per product.
+  
+  - name: standardcost
+    description: Standard cost of the product.
+  
+  - name: listprice
+    description: Selling price.
+  
+  - name: productline
+    description: R = Road, M = Mountain, T = Touring, S = Standard
+  
+  - name: style
+    description: W = Womens, M = Mens, U = Universal
+  
+  - name: categoryname
+    description: Category description.
+  
+  - name: subcategoryname
+    description: Subcategory description.
+
+  - name: customerfirstname
+    description: First name of the person.
+  
+  - name: customermiddlename
+    description: Middle name or middle initial of the person.
+  
+  - name: customerlastname
+    description: Last name of the person.
+
+  - name: city
+    description: Name of the city.
+  
+  - name: stateprovincecode
+    description: ISO standard state or province code.
+  
+  - name: stateprovincename
+    description: State or province description.
+  
+  - name: countryregioncode
+    description: ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+  
+  - name: countryregionname
+    description: Country or region name.
+
+  - name: territorygroup
+    description: Geographic area to which the sales territory belong.
+  
+  - name: employeejobtitle
+    description: Work title such as Buyer or Sales Representative.
+  
+  - name: employeefirstname
+    description: First name of the person.
+  
+  - name: employeemiddlename
+    description: Middle name or middle initial of the person.
+  
+  - name: employeelastname
+    description: Last name of the person.
+  
+  - name: salesquota
+    description: Projected yearly sales.
+  
+  - name: bonus
+    description: Bonus due if quota is met.
+  
+  - name: commissionpct
+    description: Commision percent received per sale.
+  
+  - name: salesytd
+    description: Sales total year to date.
+  
+  - name: saleslastyear
+    description: Sales total of previous year.
