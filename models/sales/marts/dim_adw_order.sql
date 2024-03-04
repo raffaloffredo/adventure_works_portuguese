@@ -1,11 +1,10 @@
 with dim_adw_order as (
     select 
         {{ dbt_utils.generate_surrogate_key(['salesorderheader.salesorderid', 'productid']) }} as order_sk
-        , salesorderheader.salesorderid
+        , salesorderheader.salesorderid as orderid
         , salesorderheader.orderdate
-        , salesorderdetail.orderqty
         , salesorderdetail.productid
-        , salesorderdetail.salesorderdetailid
+        , salesorderdetail.orderqty
         , salesorderdetail.unitprice
         , salesorderdetail.unitpricediscount
         , salesorderheader.freight
@@ -14,7 +13,7 @@ with dim_adw_order as (
         , salesorderheader.customerid
         , salesorderheader.salespersonid
         , salesorderheader.shipdate
-        , salesorderheader.status
+        , salesorderheader.status as shipstatus
         , salesorderheader.subtotal
         , salesorderheader.taxamt
         , salesorderheader.totaldue

@@ -3,7 +3,7 @@
         {{ dbt_utils.generate_surrogate_key(['product.productid', 'product.productnumber']) }} as dimproduct_sk
         , product.productid
         , product.productsubcategoryid
-        , product.name
+        , product.name as productname
         , product.standardcost
         , product.listprice
         , product.productline

@@ -10,20 +10,17 @@ models:
           - unique
           - not_null
 
-      - name: salesorderid
+      - name: orderid
         description: Foreign key to salesorderheader table.
 
       - name: orderdate
         description: Dates the sales order was created.
 
-      - name: orderqty
-        description: Quantity ordered per product.
-
       - name: productid
         description: Product sold to customer. Foreign key to Product.ProductID.
 
-      - name: salesorderdetailid
-        description: Foreign key to salesorderdetail table. One incremental unique number per product sold.
+      - name: orderqty
+        description: Quantity ordered per product.
       
       - name: unitprice
         description: Selling price of a single product.
@@ -49,7 +46,7 @@ models:
       - name: shipdate
         description: Date the order was shipped to the customer.
       
-      - name: status
+      - name: shipstatus
         description: Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = Cancelled
       
       - name: subtotal

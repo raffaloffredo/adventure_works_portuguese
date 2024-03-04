@@ -4,9 +4,9 @@ with dim_adw_customer as (
         , salesorderheader.salesorderid
         , salesorderheader.customerid
         , salesorderheader.salespersonid
-        , person.firstname
-        , person.middlename
-        , person.lastname
+        , person.firstname as customerfirstname
+        , person.middlename as customermiddlename
+        , person.lastname as customerlastname
         , address.addressid
         , address.city
         , stateprovince.stateprovinceid

@@ -16,19 +16,16 @@ models:
       - name: territoryid
         description: Territory currently assigned to. Foreign key to SalesTerritory.SalesTerritoryID.
 
-      - name: storename
-        description: Name of the store.
-
-      - name: jobtitle
+      - name: employeejobtitle
         description: Work title such as Buyer or Sales Representative.
 
-      - name: firstname
+      - name: employeefirstname
         description: First name of the person.
 
-      - name: middlename
+      - name: employeemiddlename
         description: Middle name or middle initial of the person.
 
-      - name: lastname
+      - name: employeelastname
         description: Last name of the person.
 
       - name: salesquota

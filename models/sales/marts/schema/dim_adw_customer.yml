@@ -10,7 +10,7 @@ models:
       - unique
       - not_null
   
-  - name: salesorderid
+  - name: orderid
     description: Foreign key.
     
   - name: customerid
@@ -19,13 +19,13 @@ models:
   - name: salespersonid
     description: Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID.
 
-  - name: firstname
+  - name: customerfirstname
     description: First name of the person.
   
-  - name: middlename
+  - name: customermiddlename
     description: Middle name or middle initial of the person.
     
-  - name: lastname
+  - name: customerlastname
     description: Last name of the person.
   
   - name: addressid

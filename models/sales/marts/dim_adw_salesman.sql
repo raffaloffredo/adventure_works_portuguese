@@ -1,13 +1,12 @@
 with dim_adw_salesman as (
     select
-        {{ dbt_utils.generate_surrogate_key(['salesperson_sk', 'employee_sk', 'person_sk', 'store_sk']) }} as salesman_sk
+        {{ dbt_utils.generate_surrogate_key(['salesperson_sk', 'employee_sk', 'person_sk']) }} as salesman_sk
         , salesperson.businessentityid
         , salesperson.territoryid
-        , store.storename
-        , employee.jobtitle
-        , person.firstname
-        , person.middlename
-        , person.lastname
+        , employee.jobtitle as employeejobtitle
+        , person.firstname as employeefirstname
+        , person.middlename as employeemiddlename
+        , person.lastname as employeelastname
         , salesperson.salesquota
         , salesperson.bonus
         , salesperson.commissionpct
@@ -18,9 +17,6 @@ with dim_adw_salesman as (
 
     left join {{ ref('stg_sap_adw__employee') }} as employee
     on salesperson.businessentityid = employee.businessentityid
-
-    left join {{ ref('stg_sap_adw__store') }} as store
-    on salesperson.businessentityid = store.businessentityid
 
     left join {{ ref('stg_sap_adw__person') }} as person
     on employee.businessentityid = person.businessentityid
