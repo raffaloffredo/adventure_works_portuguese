@@ -1,6 +1,6 @@
 with dim_adw_customer as (
     select
-        {{ dbt_utils.generate_surrogate_key(['salesorderid', 'customerid', 'salespersonid']) }} as customer_sk
+        {{ dbt_utils.generate_surrogate_key(['customerid']) }} as customer_sk
         , salesorderheader.salesorderid
         , salesorderheader.customerid
         , salesorderheader.salespersonid
