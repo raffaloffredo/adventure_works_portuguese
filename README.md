@@ -1,10 +1,5 @@
 # Modern Analytics Stack aplicado à Adventure Works
-
 </br>
-<p align="center">
-  🚧 EM CONSTRUÇÃO 🚧
-</p>
-<br/>
 
 <p align="center">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMgYM5qSqQL1xhGqGhPwkjbwub1thEUb9AAFDzBbnTUPNgSUB7RaVDCSM6UJc1uEk41S3T3KYaM24rPe91o5bSnqAgEoMZwIJObDSUvmnq_Vv68mfcODphfMEYVxeH6YFq-xGVEVNqgXU2MzbCS5H77kFnvJTg4tLu7cuaiS_H_zro_7mwQI0gQtwoUqI/w640-h259/aw_logo.png" width="60%">
@@ -13,10 +8,17 @@
 
 ## Sobre o projeto
 A Adventure Works (AW) é uma indústria de bicicletas em franco crescimento que se orgulha de possuir mais de 500 produtos distintos, 20.000 clientes e 31.000 pedidos. Para manter seu ritmo de crescimento e se diferenciar da concorrência, a Adventure Works quer utilizar seus dados de forma estratégica, norteando suas decisões para se tornar uma empresa data driven. A diretoria da Adventure Works já listou uma série de perguntas que ela quer responder através de cruzamentos dos dados, e que devem guiar o desenvolvimento das tabelas de fatos e dimensões do data warehouse. Para iniciar o projeto e obter resultados rápidos, a opção foi iniciar pela área de vendas (sales).
+<br/>
+<br/>
 
-* **[Projeto na íntegra]()**
-* **[Artigo Completo]()**
-* **[Artigo Resumido (Resultados)]()**
+## Ferramentas utilizadas
+- [App Diagrams](https://app.diagrams.net/) - desenvolvimento de digramas: objetivos estratégicos, conceitual e lógico
+- [Stich Data](https://www.stitchdata.com/) - extração e carregamento dos dados
+- [Google BigQuery](https://cloud.google.com/bigquery?hl=pt-BR) - armazenamento dos dados em nuvem
+- [Google Sheets](https://www.google.com/sheets/about/) - criação de planilhas
+- [dbt](https://www.getdbt.com/) - transformação dos dados
+- [Looker Studio](https://lookerstudio.google.com/u/0/navigation/reporting) - desenvolvimento de painéis analíticos
+- [Google Colab](https://colab.research.google.com/) - desenvolvimento e excução de código Python para criação de agoritmo para previsão de demanda
 
 <br/>
 
