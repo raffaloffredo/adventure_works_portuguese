@@ -22,12 +22,20 @@ A Adventure Works (AW) é uma indústria de bicicletas em franco crescimento que
 
 <br/>
 
-## Material Extra
+## Materiais Extras
 
 <br/>
 
 <p align="center">
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH8Ja0lPRd4mgzWasoDILqHFz0zBvkh4kaNGA9LKQuaNogONeOWAytuTNk5KJE4bLJCOvUep4IA-he2XrBMojdHTJKpzo7kQ6GMlm2uEGQbl27Qg8AyY9XHngs84KLxtB9uY3RPk7e-rJH8x5_MUc5Iz8eIASF3XxqzUinP3jnHqeUdcFnZ1Qph1zqCjs/s16000/%5BADW%5D%20pipeline.gif">
+  Pipeline personalizado para construção do Modern Analytics Stack na Adventure Works
+</p>
+<br/>
+<br/>
+
+<p align="center">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiif43wyqSewHvunEsPyoPHwnCTiM7EV5IpbCXW_a1frvSuOEB2ZLGjh1Rl7I5WYB44IgTyxAbXYdvbM1xflNmSSQnogC5T_DS-KqBfLuzqg2jgtAZXUvpeJq1UCkIzAXFhqOC_BvVj3clrnEIyrZStzfr7QxMwMc_9BzBGL1VdF3aO9PFJa7EOoL-jd9I/s16000/%5BAdventure%20Works%5D%20Model%20Planning%20-%20logic%20modeling.png">
+  Modelo lógico utilizado para desenvolver o projeto no dbt (clique para ampliar)
 </p>
 <br/>
 
