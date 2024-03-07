@@ -24,7 +24,7 @@
 <br/>
 
 <p align="center">
-  <img src="" width="60%">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH8Ja0lPRd4mgzWasoDILqHFz0zBvkh4kaNGA9LKQuaNogONeOWAytuTNk5KJE4bLJCOvUep4IA-he2XrBMojdHTJKpzo7kQ6GMlm2uEGQbl27Qg8AyY9XHngs84KLxtB9uY3RPk7e-rJH8x5_MUc5Iz8eIASF3XxqzUinP3jnHqeUdcFnZ1Qph1zqCjs/s16000/%5BADW%5D%20pipeline.gif">
 </p>
 <br/>
 
