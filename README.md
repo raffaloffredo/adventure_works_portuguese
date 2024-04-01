@@ -18,7 +18,7 @@ A Adventure Works (AW) é uma indústria de bicicletas em franco crescimento que
 - [Google Sheets](https://www.google.com/sheets/about/) - criação de planilhas
 - [dbt](https://www.getdbt.com/) - transformação dos dados
 - [Looker Studio](https://lookerstudio.google.com/u/0/navigation/reporting) - desenvolvimento de painéis analíticos
-- [Google Colab](https://colab.research.google.com/) - desenvolvimento e excução de código Python para criação de agoritmo para previsão de demanda
+- [Google Colab](https://colab.research.google.com/) - desenvolvimento e excução de código Python para criação de algoritmo para previsão de demanda
 
 <br/>
 
